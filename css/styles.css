@@ -386,6 +386,17 @@ body {
   fill: currentColor;
 }
 
+.privacy-policy {
+  margin-left: 3px;
+  color: var(--link-color);
+}
+
+.send {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
 /*------------- Footer -------------*/
 
 .footer {
@@ -679,6 +690,10 @@ body {
   color: var(--modal-bg-color);
 }
 
+.modal-field {
+  margin-top: 8px;
+}
+
 .modal-comment {
   width: 100%;
   height: 120px;
@@ -688,6 +703,38 @@ body {
   resize: none;
   padding: 8px 16px;
   outline: transparent;
+}
+
+.modal-field-check {
+  margin-top: 16px;
+}
+
+.check-text {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 0.86;
+  letter-spacing: 0.04em;
+  color: var(--customers-icon);
+}
+
+.modal-check-text {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--modal-bg-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.modal-check:checked + .check-text > .modal-check-text {
+  background-color: var(--hover-color);
+  border: none;
+  border-color: 1px solid var(--hover-color);
+  fill: var(--cloud-footer-color);
 }
 
 /*------------- Frames -------------*/

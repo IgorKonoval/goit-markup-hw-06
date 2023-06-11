@@ -387,11 +387,6 @@ body {
   fill: currentColor;
 }
 
-.privacy-policy {
-  margin-left: 3px;
-  color: var(--link-color);
-}
-
 /*------------- Footer -------------*/
 
 .footer {
@@ -759,8 +754,8 @@ body {
 }
 
 .check-text {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -787,6 +782,11 @@ body {
   border: none;
   border-color: 1px solid var(--hover-color);
   fill: var(--cloud-footer-color);
+}
+
+.privacy-policy {
+  /* margin-left: 3px; */
+  color: var(--link-color);
 }
 
 .modal-button {

@@ -718,7 +718,7 @@ body {
   color: var(--customers-icon);
 }
 
-.modal-check-text {
+.check-text span {
   width: 16px;
   height: 16px;
   border: 1px solid var(--modal-bg-color);
@@ -730,7 +730,7 @@ body {
   fill: transparent;
 }
 
-.modal-check:checked + .check-text > .modal-check-text {
+.modal-check:checked + .check-text span {
   background-color: var(--hover-color);
   border: none;
   border-color: 1px solid var(--hover-color);

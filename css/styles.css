@@ -789,13 +789,14 @@ body {
   fill: var(--cloud-footer-color);
 }
 
-.send {
+/* .send {
   display: flex;
   justify-content: center;
-}
+} */
 
 .modal-button {
   display: block;
+  margin: 0 auto;
 }
 
 /*------------- Frames -------------*/

@@ -10,6 +10,7 @@
   --customers-icon: #8e8f99;
   --modal-bg-box-color: #fcfcfc;
   --modal-bg-color: rgba(46, 47, 66, 0.4);
+  --footer-box-shadow: rgba(0, 0, 0, 0.15);
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 }
@@ -215,7 +216,7 @@ body {
   color: var(--hero-bkgrd-color);
   background-color: var(--link-color);
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--footer-box-shadow);
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
@@ -469,6 +470,50 @@ body {
   fill: var(--cloud-footer-color);
 }
 
+.footer-email {
+  margin-left: 80px;
+}
+
+.footer-email-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-email-form {
+  margin-top: 16px;
+}
+
+.footer-email-input {
+  display: flex;
+  width: 264px;
+  height: 40px;
+  border: 1px solid var(--hero-bkgrd-color);
+  filter: drop-shadow(0px 4px 4px var(--footer-box-shadow));
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--hero-bkgrd-color);
+  padding: 8px 16px;
+  outline: transparent;
+}
+
+.footer-email-input:focus {
+  border-color: var(--link-color);
+  filter: none;
+}
+
+.footer-buttom {
+  display: flex;
+  min-width: 165px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+}
+
 /*------------- Portfolio main -------------*/
 
 .section-portfolio {
@@ -636,16 +681,13 @@ body {
   justify-content: center;
 }
 
-.modal-form {
-}
-
 .modal-input-block {
   margin-top: 16px;
 }
 
 .modal-text-box {
   font-size: 12px;
-  line-height: 0.86;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--customers-icon);
   display: block;
@@ -685,7 +727,7 @@ body {
 .modal-input::placeholder,
 .modal-comment::placeholder {
   font-size: 12px;
-  line-height: 0.86;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--modal-bg-color);
 }
@@ -713,7 +755,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 12px;
-  line-height: 0.86;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--customers-icon);
 }
@@ -766,5 +808,26 @@ body {
 
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
   }
 }

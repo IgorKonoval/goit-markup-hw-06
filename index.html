@@ -413,13 +413,13 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-input-block">
-            <label for="modal-name" class="modal-text-box">Name</label>
+            <label for="modal-names" class="modal-text-box">Name</label>
             <div class="modal-position">
               <input
                 type="text"
-                class="modal-input"
+                id="modal-names"
                 name="modal-name"
-                id="modal-name"
+                class="modal-input"
                 placeholder="Petro Petrovich"
                 required
               />
@@ -427,7 +427,9 @@
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
+          </div>
 
+          <div class="modal-input-block">
             <label for="modal-phone" class="modal-text-box">Phone</label>
             <div class="modal-position">
               <input
@@ -442,7 +444,9 @@
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
+          </div>
 
+          <div class="modal-input-block">
             <label for="modal-email" class="modal-text-box">Email</label>
             <div class="modal-position">
               <input
@@ -456,34 +460,35 @@
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
-
-            <div class="modal-field">
-              <label for="modal-content" class="modal-text-box">Content</label>
-              <textarea
-                class="modal-comment"
-                id="modal-content"
-                name="modal-content"
-                placeholder="Text input"
-              ></textarea>
-            </div>
-
-            <div class="modal-field-check">
-              <input
-                type="checkbox"
-                id="privacy"
-                name="privacy"
-                value="true"
-                class="modal-check visually-hidden"
-              />
-              <label for="privacy" class="check-text">
-                <span>
-                  <svg class="check-icon" width="10" height="8">
-                    <use href="./images/icons.svg#icon-check-mark"></use></svg></span
-                >I accept the terms and conditions of the
-                <a href="" class="privacy-policy">Privacy Policy</a></label
-              >
-            </div>
           </div>
+
+          <div class="modal-field">
+            <label for="modal-content" class="modal-text-box">Content</label>
+            <textarea
+              class="modal-comment"
+              id="modal-content"
+              name="modal-content"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="modal-field-check">
+            <input
+              type="checkbox"
+              id="privacy"
+              name="privacy"
+              value="true"
+              class="modal-check visually-hidden"
+            />
+            <label for="privacy" class="check-text">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check-mark"></use></svg></span
+              >I accept the terms and conditions of the
+              <a href="" class="privacy-policy">Privacy Policy</a></label
+            >
+          </div>
+
           <div class="send">
             <button type="submit" class="button">Send</button>
           </div>

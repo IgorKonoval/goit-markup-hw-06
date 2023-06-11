@@ -767,8 +767,8 @@ body {
   color: var(--customers-icon);
 }
 
-/* .check-text span */
-.privacy-icon {
+/* .privacy-icon */
+.check-text span {
   width: 16px;
   height: 16px;
   border: 1px solid var(--modal-bg-color);
@@ -788,11 +788,6 @@ body {
   border-color: 1px solid var(--hover-color);
   fill: var(--cloud-footer-color);
 }
-
-/* .send {
-  display: flex;
-  justify-content: center;
-} */
 
 .modal-button {
   display: block;
